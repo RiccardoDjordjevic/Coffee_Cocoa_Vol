@@ -1,0 +1,107 @@
+﻿Variable Name,Description,Calculation Method,Category
+parkinson_vol,Parkinson volatility measure,sqrt((1/(4*ln(2))) * (ln(High/Low))²),Volatility
+garman_klass_vol,Garman-Klass volatility measure,sqrt(0.5*(ln(High/Low))² - (2ln(2)-1)(ln(Close/Open))²),Volatility
+RVB,Realized negative volatility,"When returns < 0: returns², otherwise 0",Moments
+RVG,Realized positive volatility,"When returns > 0: returns², otherwise 0",Moments
+RSK_5d,5-day realized skewness,(√5 * sum(returns³)) / (sum(returns²))^(3/2) over 5-day window,Moments
+RKU_5d,5-day realized kurtosis,(5 * sum(returns⁴)) / (sum(returns²))² over 5-day window,Moments
+RVB_5d,5-day rolling mean of negative volatility,5-day rolling average of RVB,Moments
+RVG_5d,5-day rolling mean of positive volatility,5-day rolling average of RVG,Moments
+RSK_22d,22-day realized skewness,(√22 * sum(returns³)) / (sum(returns²))^(3/2) over 22-day window,Moments
+RKU_22d,22-day realized kurtosis,(22 * sum(returns⁴)) / (sum(returns²))² over 22-day window,Moments
+RVB_22d,22-day rolling mean of negative volatility,22-day rolling average of RVB,Moments
+RVG_22d,22-day rolling mean of positive volatility,22-day rolling average of RVG,Moments
+parkinson_vol_rolling_5,5-day rolling Parkinson volatility,5-day rolling average of parkinson_vol,Volatility
+parkinson_vol_rolling_22,22-day rolling Parkinson volatility,22-day rolling average of parkinson_vol,Volatility
+garman_klass_vol_rolling_5,5-day rolling Garman-Klass volatility,5-day rolling average of garman_klass_vol,Volatility
+garman_klass_vol_rolling_22,22-day rolling Garman-Klass volatility,22-day rolling average of garman_klass_vol,Volatility
+ONI_dummy,Oceanic Niño Index category,"1 if ONI < -0.5, 2 if -0.5 ≤ ONI ≤ 0.5, 3 if ONI > 0.5",Weather
+Temp_Cote_first,First difference of Côte d'Ivoire temperature,Temp_Cote(t) - Temp_Cote(t-1),Weather
+Prec_Cote_first,First difference of Côte d'Ivoire precipitation,Prec_Cote(t) - Prec_Cote(t-1),Weather
+Temp_Ghana_first,First difference of Ghana temperature,Temp_Ghana(t) - Temp_Ghana(t-1),Weather
+Prec_Ghana_first,First difference of Ghana precipitation,Prec_Ghana(t) - Prec_Ghana(t-1),Weather
+Temp_Indo_Lampung_first,First difference of Indonesia Lampung temperature,Temp_Indo_Lampung(t) - Temp_Indo_Lampung(t-1),Weather
+Prec_Indo_Lampung_first,First difference of Indonesia Lampung precipitation,Prec_Indo_Lampung(t) - Prec_Indo_Lampung(t-1),Weather
+Temp_Indo_Palu_first,First difference of Indonesia Palu temperature,Temp_Indo_Palu(t) - Temp_Indo_Palu(t-1),Weather
+Prec_Indo_Palu_first,First difference of Indonesia Palu precipitation,Prec_Indo_Palu(t) - Prec_Indo_Palu(t-1),Weather
+ONI_first,First difference of Oceanic Niño Index,ONI(t) - ONI(t-1),Weather
+ADS_Index_first,First difference of Aruoba-Diebold-Scotti Business Conditions Index,ADS_Index(t) - ADS_Index(t-1),Uncertainty
+VIX_first,First difference of CBOE Volatility Index,VIX(t) - VIX(t-1),Uncertainty
+GEPU_ppp_first,First difference of Global Economic Policy Uncertainty Index,GEPU_ppp(t) - GEPU_ppp(t-1),Uncertainty
+GSCI_Commodity_squared_return,Squared logarithmic returns of GSCI Commodity Index,(100 * (ln(GSCI(t)) - ln(GSCI(t-1))))²,Commodities
+Soybean_squared_return,Squared logarithmic returns of Soybean prices,(100 * (ln(Soybean(t)) - ln(Soybean(t-1))))²,Commodities
+Corn_squared_return,Squared logarithmic returns of Corn prices,(100 * (ln(Corn(t)) - ln(Corn(t-1))))²,Commodities
+Wheat_squared_return,Squared logarithmic returns of Wheat prices,(100 * (ln(Wheat(t)) - ln(Wheat(t-1))))²,Commodities
+Diesel_squared_return,Squared logarithmic returns of Diesel prices,(100 * (ln(Diesel(t)) - ln(Diesel(t-1))))²,Commodities
+XOFUSD_squared_return,Squared logarithmic returns of XOF/USD exchange rate,(100 * (ln(XOFUSD(t)) - ln(XOFUSD(t-1))))²,FX
+IDRUSD_squared_return,Squared logarithmic returns of IDR/USD exchange rate,(100 * (ln(IDRUSD(t)) - ln(IDRUSD(t-1))))²,FX
+GHSUSD_squared_return,Squared logarithmic returns of GHS/USD exchange rate,(100 * (ln(GHSUSD(t)) - ln(GHSUSD(t-1))))²,FX
+EURUSD_squared_return,Squared logarithmic returns of EUR/USD exchange rate,(100 * (ln(EURUSD(t)) - ln(EURUSD(t-1))))²,FX
+GBPUSD_squared_return,Squared logarithmic returns of GBP/USD exchange rate,(100 * (ln(GBPUSD(t)) - ln(GBPUSD(t-1))))²,FX
+Netherlands_squared_return,Squared logarithmic returns of Netherlands market index,(100 * (ln(Netherlands(t)) - ln(Netherlands(t-1))))²,Equity
+Germany_squared_return,Squared logarithmic returns of German market index,(100 * (ln(Germany(t)) - ln(Germany(t-1))))²,Equity
+Malaysia_squared_return,Squared logarithmic returns of Malaysian market index,(100 * (ln(Malaysia(t)) - ln(Malaysia(t-1))))²,Equity
+chocolate_index,Equal-weighted chocolate stock index,"Mean of 5 chocolate company stocks (Hershey, Lindt, Fuji, Guan_Chong, Barry_Calle)",Equity
+chocolate_index_squared_return,Squared returns of chocolate index,(100 * (ln(chocolate_index(t)) - ln(chocolate_index(t-1))))²,Equity
+ONI_dummy_rolling_5,5-day rolling ONI category,"5-day moving average of ONI_dummy, rounded to nearest integer",Weather
+ONI_dummy_rolling_22,22-day rolling ONI category,"22-day moving average of ONI_dummy, rounded to nearest integer",Weather
+Temp_Cote_first_rolling_5,5-day rolling average of Côte d'Ivoire temperature changes,5-day moving average of Temp_Cote_first,Weather
+Temp_Cote_first_rolling_22,22-day rolling average of Côte d'Ivoire temperature changes,22-day moving average of Temp_Cote_first,Weather
+Prec_Cote_first_rolling_5,5-day rolling average of Côte d'Ivoire precipitation changes,5-day moving average of Prec_Cote_first,Weather
+Prec_Cote_first_rolling_22,22-day rolling average of Côte d'Ivoire precipitation changes,22-day moving average of Prec_Cote_first,Weather
+Temp_Ghana_first_rolling_5,5-day rolling average of Ghana temperature changes,5-day moving average of Temp_Ghana_first,Weather
+Temp_Ghana_first_rolling_22,22-day rolling average of Ghana temperature changes,22-day moving average of Temp_Ghana_first,Weather
+Prec_Ghana_first_rolling_5,5-day rolling average of Ghana precipitation changes,5-day moving average of Prec_Ghana_first,Weather
+Prec_Ghana_first_rolling_22,22-day rolling average of Ghana precipitation changes,22-day moving average of Prec_Ghana_first,Weather
+Temp_Indo_Lampung_first_rolling_5,5-day rolling average of Indonesia Lampung temperature changes,5-day moving average of Temp_Indo_Lampung_first,Weather
+Temp_Indo_Lampung_first_rolling_22,22-day rolling average of Indonesia Lampung temperature changes,22-day moving average of Temp_Indo_Lampung_first,Weather
+Prec_Indo_Lampung_first_rolling_5,5-day rolling average of Indonesia Lampung precipitation changes,5-day moving average of Prec_Indo_Lampung_first,Weather
+Prec_Indo_Lampung_first_rolling_22,22-day rolling average of Indonesia Lampung precipitation changes,22-day moving average of Prec_Indo_Lampung_first,Weather
+Temp_Indo_Palu_first_rolling_5,5-day rolling average of Indonesia Palu temperature changes,5-day moving average of Temp_Indo_Palu_first,Weather
+Temp_Indo_Palu_first_rolling_22,22-day rolling average of Indonesia Palu temperature changes,22-day moving average of Temp_Indo_Palu_first,Weather
+Prec_Indo_Palu_first_rolling_5,5-day rolling average of Indonesia Palu precipitation changes,5-day moving average of Prec_Indo_Palu_first,Weather
+Prec_Indo_Palu_first_rolling_22,22-day rolling average of Indonesia Palu precipitation changes,22-day moving average of Prec_Indo_Palu_first,Weather
+ONI_first_rolling_5,5-day rolling average of ONI changes,5-day moving average of ONI_first,Weather
+ONI_first_rolling_22,22-day rolling average of ONI changes,22-day moving average of ONI_first,Weather
+ADS_Index_first_rolling_5,5-day rolling average of ADS Index changes,5-day moving average of ADS_Index_first,Uncertainty
+ADS_Index_first_rolling_22,22-day rolling average of ADS Index changes,22-day moving average of ADS_Index_first,Uncertainty
+VIX_first_rolling_5,5-day rolling average of VIX changes,5-day moving average of VIX_first,Uncertainty
+VIX_first_rolling_22,22-day rolling average of VIX changes,22-day moving average of VIX_first,Uncertainty
+GEPU_ppp_first_rolling_5,5-day rolling average of GEPU changes,5-day moving average of GEPU_ppp_first,Uncertainty
+GEPU_ppp_first_rolling_22,22-day rolling average of GEPU changes,22-day moving average of GEPU_ppp_first,Uncertainty
+GSCI_Commodity_squared_return_rolling_5,5-day rolling average of GSCI squared returns,5-day moving average of GSCI_Commodity_squared_return,Commodities
+GSCI_Commodity_squared_return_rolling_22,22-day rolling average of GSCI squared returns,22-day moving average of GSCI_Commodity_squared_return,Commodities
+Soybean_squared_return_rolling_5,5-day rolling average of Soybean squared returns,5-day moving average of Soybean_squared_return,Commodities
+Soybean_squared_return_rolling_22,22-day rolling average of Soybean squared returns,22-day moving average of Soybean_squared_return,Commodities
+Corn_squared_return_rolling_5,5-day rolling average of Corn squared returns,5-day moving average of Corn_squared_return,Commodities
+Corn_squared_return_rolling_22,22-day rolling average of Corn squared returns,22-day moving average of Corn_squared_return,Commodities
+Wheat_squared_return_rolling_5,5-day rolling average of Wheat squared returns,5-day moving average of Wheat_squared_return,Commodities
+Wheat_squared_return_rolling_22,22-day rolling average of Wheat squared returns,22-day moving average of Wheat_squared_return,Commodities
+Diesel_squared_return_rolling_5,5-day rolling average of Diesel squared returns,5-day moving average of Diesel_squared_return,Commodities
+Diesel_squared_return_rolling_22,22-day rolling average of Diesel squared returns,22-day moving average of Diesel_squared_return,Commodities
+XOFUSD_squared_return_rolling_5,5-day rolling average of XOF/USD squared returns,5-day moving average of XOFUSD_squared_return,FX
+XOFUSD_squared_return_rolling_22,22-day rolling average of XOF/USD squared returns,22-day moving average of XOFUSD_squared_return,FX
+IDRUSD_squared_return_rolling_5,5-day rolling average of IDR/USD squared returns,5-day moving average of IDRUSD_squared_return,FX
+IDRUSD_squared_return_rolling_22,22-day rolling average of IDR/USD squared returns,22-day moving average of IDRUSD_squared_return,FX
+GHSUSD_squared_return_rolling_5,5-day rolling average of GHS/USD squared returns,5-day moving average of GHSUSD_squared_return,FX
+GHSUSD_squared_return_rolling_22,22-day rolling average of GHS/USD squared returns,22-day moving average of GHSUSD_squared_return,FX
+EURUSD_squared_return_rolling_5,5-day rolling average of EUR/USD squared returns,5-day moving average of EURUSD_squared_return,FX
+EURUSD_squared_return_rolling_22,22-day rolling average of EUR/USD squared returns,22-day moving average of EURUSD_squared_return,FX
+GBPUSD_squared_return_rolling_5,5-day rolling average of GBP/USD squared returns,5-day moving average of GBPUSD_squared_return,FX
+GBPUSD_squared_return_rolling_22,22-day rolling average of GBP/USD squared returns,22-day moving average of GBPUSD_squared_return,FX
+Netherlands_squared_return_rolling_5,5-day rolling average of Netherlands market squared returns,5-day moving average of Netherlands_squared_return,Equity
+Netherlands_squared_return_rolling_22,22-day rolling average of Netherlands market squared returns,22-day moving average of Netherlands_squared_return,Equity
+Germany_squared_return_rolling_5,5-day rolling average of German market squared returns,5-day moving average of Germany_squared_return,Equity
+Germany_squared_return_rolling_22,22-day rolling average of German market squared returns,22-day moving average of Germany_squared_return,Equity
+Malaysia_squared_return_rolling_5,5-day rolling average of Malaysian market squared returns,5-day moving average of Malaysia_squared_return,Equity
+Malaysia_squared_return_rolling_22,22-day rolling average of Malaysian market squared returns,22-day moving average of Malaysia_squared_return,Equity
+chocolate_index_rolling_5,5-day rolling average of chocolate stock index,5-day moving average of chocolate_index,Equity
+chocolate_index_rolling_22,22-day rolling average of chocolate stock index,22-day moving average of chocolate_index,Equity
+chocolate_index_squared_return_rolling_5,5-day rolling average of chocolate index squared returns,5-day moving average of chocolate_index_squared_return,Equity
+chocolate_index_squared_return_rolling_22,22-day rolling average of chocolate index squared returns,22-day moving average of chocolate_index_squared_return,Equity
+RV_rolling_5,5-day rolling realized volatility,5-day moving average of squared returns,Moments
+RV_rolling_22,22-day rolling realized volatility,22-day moving average of squared returns,Moments
+RVB_rolling_5,5-day rolling average of negative volatility,5-day moving average of RVB,Moments
+RVB_rolling_22,22-day rolling average of negative volatility,22-day moving average of RVB,Moments
+RVG_rolling_5,5-day rolling average of positive volatility,5-day moving average of RVG,Moments
+RVG_rolling_22,22-day rolling average of positive volatility,22-day moving average of RVG,Moments
