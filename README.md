@@ -421,11 +421,12 @@ This framework is designed for extensibility:
 
 ## Contact
 
-This project has been authored by Riccardo Djordjevic under the supervision of [Dr. Thomas Walther](https://sites.google.com/view/thomas-walther) as bachelor thesis for the BSc in Economics and Business Economics, with minor in Applied Data Science at [Utrecht University](https://www.uu.nl/en/bachelors/economics-and-business-economics).
+This project has been authored by Riccardo Djordjevic under the supervision of [Dr. Thomas Walther](https://sites.google.com/view/thomas-walther) as bachelor thesis for the BSc in Economics and Business Economics, with minor in Applied Data Science at [Utrecht University](https://www.uu.nl/en/bachelors/economics-and-business-economics). The project has been completed in collaboration with Fairventures Agroforestry, an agroforestry company involved in the supply chain of soft commodities in Indonesia. 
 
-[LinkedIn](https://www.linkedin.com/in/riccardo-djordjevic/)
-Email: [riccardo.djordjevic@outlook.com](mailto:riccardo.djordjevic@outlook.com)
-[Fairventures Website](https://www.fairventures.earth/)
+
+- [Riccardo Djordjevic - LinkedIn](https://www.linkedin.com/in/riccardo-djordjevic/)
+- Email: [riccardo.djordjevic@outlook.com](mailto:riccardo.djordjevic@outlook.com)
+- [Fairventures Website](https://www.fairventures.earth/)
 
 
 ---
