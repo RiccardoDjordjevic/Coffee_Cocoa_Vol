@@ -1,0 +1,99 @@
+﻿Variable Name,Description,Category
+Arabica,Arabica coffee price,Commodities
+Arabica_rolling_5,5-day rolling average of Arabica price,Commodities
+Arabica_rolling_22,22-day rolling average of Arabica price,Commodities
+parkinson_vol,Parkinson volatility estimator using high/low prices,Volatility
+garman_klass_vol,Garman-Klass volatility estimator using open/high/low/close,Volatility
+parkinson_vol_rolling_5,5-day rolling average of Parkinson volatility,Volatility
+parkinson_vol_rolling_22,22-day rolling average of Parkinson volatility,Volatility
+garman_klass_vol_rolling_5,5-day rolling average of Garman-Klass volatility,Volatility
+garman_klass_vol_rolling_22,22-day rolling average of Garman-Klass volatility,Volatility
+RVB,Realized volatility for negative returns,Moments
+RVG,Realized volatility for positive returns,Moments
+RSK_5d,5-day realized skewness,Moments
+RSK_22d,22-day realized skewness,Moments
+RKU_5d,5-day realized kurtosis,Moments
+RKU_22d,22-day realized kurtosis,Moments
+RVB_5d,5-day rolling mean of negative returns volatility,Moments
+RVB_22d,22-day rolling mean of negative returns volatility,Moments
+RVG_5d,5-day rolling mean of positive returns volatility,Moments
+RV_rolling_5,5-day rolling mean of realized volatility,Moments
+RV_rolling_22,22-day rolling mean of realized volatility,Moments
+ONI_dummy,"El Niño indicator (1=La Niña, 2=Neutral, 3=El Niño)",Weather
+ONI_dummy_rolling_5,5-day rolling mean of ONI dummy,Weather
+ONI_dummy_rolling_22,22-day rolling mean of ONI dummy,Weather
+ONI_first,First difference of Oceanic Niño Index,Weather
+ONI_first_rolling_5,5-day rolling mean of ONI first difference,Weather
+ONI_first_rolling_22,22-day rolling mean of ONI first difference,Weather
+TempIndo_first,First difference of Indonesia temperature,Weather
+TempIndo_first_rolling_5,5-day rolling mean of Indonesia temperature changes,Weather
+TempIndo_first_rolling_22,22-day rolling mean of Indonesia temperature changes,Weather
+PrecIndo_first,First difference of Indonesia precipitation,Weather
+PrecIndo_first_rolling_5,5-day rolling mean of Indonesia precipitation changes,Weather
+PrecIndo_first_rolling_22,22-day rolling mean of Indonesia precipitation changes,Weather
+TempViet_first,First difference of Vietnam temperature,Weather
+TempViet_first_rolling_5,5-day rolling mean of Vietnam temperature changes,Weather
+TempViet_first_rolling_22,22-day rolling mean of Vietnam temperature changes,Weather
+PrecViet_first,First difference of Vietnam precipitation,Weather
+PrecViet_first_rolling_5,5-day rolling mean of Vietnam precipitation changes,Weather
+PrecViet_first_rolling_22,22-day rolling mean of Vietnam precipitation changes,Weather
+TempBras_first,First difference of Brazil temperature,Weather
+TempBras_first_rolling_5,5-day rolling mean of Brazil temperature changes,Weather
+TempBras_first_rolling_22,22-day rolling mean of Brazil temperature changes,Weather
+PrecBras_first,First difference of Brazil precipitation,Weather
+PrecBras_first_rolling_5,5-day rolling mean of Brazil precipitation changes,Weather
+PrecBras_first_rolling_22,22-day rolling mean of Brazil precipitation changes,Weather
+ADS_Index_first,First difference of Aruoba-Diebold-Scotti Business Conditions Index,Uncertainty
+ADS_Index_first_rolling_5,5-day rolling mean of ADS Index first difference,Uncertainty
+ADS_Index_first_rolling_22,22-day rolling mean of ADS Index first difference,Uncertainty
+VIX_first,First difference of CBOE Volatility Index,Uncertainty
+VIX_first_rolling_5,5-day rolling mean of VIX first difference,Uncertainty
+VIX_first_rolling_22,22-day rolling mean of VIX first difference,Uncertainty
+GEPU_ppp_first,First difference of Global Economic Policy Uncertainty Index,Uncertainty
+GEPU_ppp_first_rolling_5,5-day rolling mean of GEPU first difference,Uncertainty
+GEPU_ppp_first_rolling_22,22-day rolling mean of GEPU first difference,Uncertainty
+GSCI_Commodity_squared_return,Squared return of GSCI Commodity Index,Commodities
+GSCI_Commodity_squared_return_rolling_5,5-day rolling mean of GSCI squared returns,Commodities
+GSCI_Commodity_squared_return_rolling_22,22-day rolling mean of GSCI squared returns,Commodities
+Soybean_squared_return,Squared return of Soybean prices,Commodities
+Soybean_squared_return_rolling_5,5-day rolling mean of Soybean squared returns,Commodities
+Soybean_squared_return_rolling_22,22-day rolling mean of Soybean squared returns,Commodities
+Corn_squared_return,Squared return of Corn prices,Commodities
+Corn_squared_return_rolling_5,5-day rolling mean of Corn squared returns,Commodities
+Corn_squared_return_rolling_22,22-day rolling mean of Corn squared returns,Commodities
+Wheat_squared_return,Squared return of Wheat prices,Commodities
+Wheat_squared_return_rolling_5,5-day rolling mean of Wheat squared returns,Commodities
+Wheat_squared_return_rolling_22,22-day rolling mean of Wheat squared returns,Commodities
+Diesel_squared_return,Squared return of Diesel prices,Commodities
+Diesel_squared_return_rolling_5,5-day rolling mean of Diesel squared returns,Commodities
+Diesel_squared_return_rolling_22,22-day rolling mean of Diesel squared returns,Commodities
+IDRUSD_squared_return,Squared return of Indonesian Rupiah to USD exchange rate,FX
+IDRUSD_squared_return_rolling_5,5-day rolling mean of IDR/USD squared returns,FX
+IDRUSD_squared_return_rolling_22,22-day rolling mean of IDR/USD squared returns,FX
+EURUSD_squared_return,Squared return of Euro to USD exchange rate,FX
+EURUSD_squared_return_rolling_5,5-day rolling mean of EUR/USD squared returns,FX
+EURUSD_squared_return_rolling_22,22-day rolling mean of EUR/USD squared returns,FX
+BRLUSD_squared_return,Squared return of Brazilian Real to USD exchange rate,FX
+BRLUSD_squared_return_rolling_5,5-day rolling mean of BRL/USD squared returns,FX
+BRLUSD_squared_return_rolling_22,22-day rolling mean of BRL/USD squared returns,FX
+CHFUSD_squared_return,Squared return of Swiss Franc to USD exchange rate,FX
+CHFUSD_squared_return_rolling_5,5-day rolling mean of CHF/USD squared returns,FX
+CHFUSD_squared_return_rolling_22,22-day rolling mean of CHF/USD squared returns,FX
+VNDUSD_squared_return,Squared return of Vietnamese Dong to USD exchange rate,FX
+VNDUSD_squared_return_rolling_5,5-day rolling mean of VND/USD squared returns,FX
+VNDUSD_squared_return_rolling_22,22-day rolling mean of VND/USD squared returns,FX
+Germany_squared_return,Squared return of German equity market,Equity
+Germany_squared_return_rolling_5,5-day rolling mean of German market squared returns,Equity
+Germany_squared_return_rolling_22,22-day rolling mean of German market squared returns,Equity
+US_squared_return,Squared return of US equity market,Equity
+US_squared_return_rolling_5,5-day rolling mean of US market squared returns,Equity
+US_squared_return_rolling_22,22-day rolling mean of US market squared returns,Equity
+France_squared_return,Squared return of French equity market,Equity
+France_squared_return_rolling_5,5-day rolling mean of French market squared returns,Equity
+France_squared_return_rolling_22,22-day rolling mean of French market squared returns,Equity
+coffee_index,Equal-weighted index of coffee company stocks,Equity
+coffee_index_rolling_5,5-day rolling mean of coffee company index,Equity
+coffee_index_rolling_22,22-day rolling mean of coffee company index,Equity
+coffee_index_squared_return,Squared return of coffee company index,Equity
+coffee_index_squared_return_rolling_5,5-day rolling mean of coffee index squared returns,Equity
+coffee_index_squared_return_rolling_22,22-day rolling mean of coffee index squared returns,Equity
